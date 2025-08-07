@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[portuguese] {babel}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{listings}
+
+
+\newtheorem{definition}{definição}
+
+\title{sistemas operacionais}
+\author{Mayra Suellen O Reis}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    \lipsum[1-2]
+\end{abstract}
+
+
+\tableofcontents
+\lstlistoflistings
+\newpage
+
+\section{Introduction}
+na seção \ref{unix}, iremos falar a respeito do maior sistema de todos os tempos. Fortran, a famosa linguagem de programação (ver \ref{pl})
+
+\clearpage
+
+\section{UNIX}
+\label{unix}
+
+\subsection {Sobre as a máqunas}
+\begin{itemize}
+    \item A pascaline\footnote{\url{https://webpages.ciencias.ulisboa.pt/~ommartins/seminario/pasca_l/maquinadepascal.htm}} foi inventado pelo genio francês Blaise Pascal.
+    \item A maquina de Babbage\footnote{\href{https://www.sciencemuseum.org.uk/home}{Science Museum}} foi utilizado por Ada Lovelace a genia inglesa.
+\end{itemize}
+    
+\subsection {Sobre as linguagens}
+\label{pl}
+
+\subsubsection{C}
+A linguagem c foi inventado por Dennis Ritchie
+No código \ref{c}, aparece um "Hello word"
+\begin{lstlisting}[language=C,caption=Trecho em C, label=C]
+    
+#include <stdio.h>
+
+int main() {
+  printf("Olá, mundo!\n");
+  return 0;
+}
+\end{lstlisting}
+
+\subsubsection{TeX}
+
+TeX é uma linguagem influenciado pelo grego $\tau \ epsilon \chi$
+$$ e^{i\pi} + 1 = 0 \int_0^{\infty}$$
+
+Na Equação \ref{Abrantes}, ...
+
+\begin{equation}
+\label{Abrantes}
+\LateX{} > \frac{l}{n} \sum_{i = l}^{n} x_1
+\end{equation}
+
+\subsection{Sobre o Time Sharing}
+\begin{definition} [Time sharing]
+\label{ts}
+Time-sharing
+\end{definition}
+
+\end{document}
